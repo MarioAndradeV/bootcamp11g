@@ -1,1 +1,111 @@
-"style" 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    width: 100%;
+    height: 50px;
+    
+    border: 3px solid royalblue;
+    background: rgb(245,94,94);
+    background: linear-gradient(0deg,
+     rgba(245,94,94,1) 0%,
+     rgba(255,255,255,1) 100%);
+}
+header h2{
+    font-family: sans-serif;
+    text-align: center;
+    line-height:50px; 
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    border: 3px solid royalblue;
+    background: rgb(141,225,247);
+    background: linear-gradient(0deg,
+     rgba(141,225,247,0.9895308465182948) 34%,
+     rgba(255,255,255,1) 100%);
+}
+nav h2{
+    font-family: sans-serif;
+    text-align: center;
+    line-height:50px; 
+}
+section{
+    width: 60%;
+    height: 500px;
+    border: 3px solid royalblue;
+    float: left;
+    background: rgb(166,247,141);
+    background: linear-gradient(0deg, 
+        rgba(166,247,141,0.9895308465182948) 0%,
+        rgba(255,255,255,1) 74%, 
+        rgba(255,255,255,1) 100%);   
+}
+section h2{
+    font-family: sans-serif;
+    text-align: center;
+    line-height:50px; 
+}
+section article h4 {
+    width: 97%;
+    height: 50px;
+    margin: 10px 10px 0px 10px;
+    border: 3px solid rgb(241, 37, 37);
+    background: rgb(245,94,94);
+    background: linear-gradient(0deg,
+     rgba(245,94,94,1) 0%,
+     rgba(255,255,255,1) 100%);
+    font-family: sans-serif;
+    text-align: center;
+    line-height:50px;    
+}
+section article h2{
+    width: 97%;
+    height: 370px;
+    margin: 1px 10px 10px 10px;
+    border: 3px solid rgb(176, 104, 179);
+    background: rgb(244,182,240);
+    background: linear-gradient(0deg,
+     rgba(244,182,240,0.9895308465182948) 4%, 
+     rgba(248,248,248,1) 100%,
+     rgba(255,255,255,1) 100%);
+    font-family: sans-serif;
+    text-align: center;
+    line-height:370px;    
+
+}
+aside{
+    width: 38%;
+    height: 500px;
+    margin: 1px 10px 10px 0px;
+    float: right;
+    border: 3px solid rgb(0, 0, 0);
+    background: rgb(79,72,79);
+    background: linear-gradient(0deg,
+     rgba(79,72,79,0.9895308465182948) 4%, 
+     rgba(248,248,248,1) 100%,
+     rgba(255,255,255,1) 100%);
+    font-family: sans-serif;
+    text-align: center;
+    line-height:500px;    
+
+}
+footer{
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+    clear: both;
+    border: 3px solid rgb(11, 112, 228);
+    background: rgb(79,72,79);
+    background: rgb(222,130,31);
+    background: linear-gradient(0deg, 
+    rgba(222,130,31,0.8970938717283788) 6%, 
+    rgba(248,248,248,1) 74%,
+    rgba(255,255,255,1) 100%);
+    font-family: sans-serif;
+    text-align: center;
+    line-height:100px;    
+     
+}
