@@ -1,0 +1,97 @@
+/* "Practica 3" */
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+
+    width: 20vw;
+    height: 50vh;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 20px;
+    background-color: white;
+    text-align: center;
+    transition-duration: .5s;
+ 
+}
+.container:hover{
+    background-color: #ed4079;
+    border: 3px solid #ed4079;
+    color: white;
+    transition-duration: .5s;
+
+}
+.container:hover .btn1{
+    background-color: white;
+    color: #ed4079;
+    border: 3px solid white;
+    transition-duration: .5s;
+
+}
+
+.card-text{
+    text-align: center; 
+    margin: 20px;
+}
+.card-text2{
+    text-align: center;
+    color: white;
+}
+.btn1{
+    height: 35px;
+    width: 200px;
+    color: white;
+    background-color: black;
+    margin: 20px;
+    border-radius: 20px;
+    transition-duration: .5s;
+}
+
+
+.icons{
+    font-size: 4rem;
+}
+
+/* --- FLEX ---*/
+
+.d-flex{
+    display:flex
+}
+.justify-flex-start{
+    justify-content: flex-start;
+}
+.justify-flex-end{
+    justify-content: flex-end;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-evenly{
+    justify-content: space-evenly;
+}
+.align-start{
+    align-items: flex-start;
+}
+.align-end{
+    align-items: flex-end;
+}
+.align-center{
+    align-items: center;
+}
+.w-100{
+    width:100%;
+}
+.flex-direction-column{
+    flex-direction: column;
+}
+
