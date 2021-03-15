@@ -1,0 +1,45 @@
+$cl-Red : hsl(0, 78%, 62%);
+$cl-Cyan: hsl(180, 62%, 55%);
+$cl-Orange: hsl(34, 97%, 64%);
+$cl-Blue: hsl(212, 86%, 64%);
+
+$cl-Very-Dark-Blue : hsl(234, 12%, 34%);
+$cl-Grayish-Blue: hsl(229, 6%, 66%);
+$cl-Very-Light-Gray : hsl(0, 0%, 98%);
+
+
+$Font-size: 15px;
+
+
+body{
+    background-color: #F9F9F9;
+    font-family:'Poppins', sans-serif;
+}
+
+.border-top-{
+    &cyan{
+        border-top: 5px solid $cl-Cyan;
+    }
+    &red{
+        border-top: 5px solid $cl-Red;
+    }
+    &orange{
+        border-top: 5px solid $cl-Orange;
+    }
+    &navy{
+        border-top: 5px solid $cl-Blue;
+    }
+}
+
+p{
+    //font-family: 'Montserrat';
+    font-weight: $Medium;
+    color: gray;
+}
+
+
+
+
+.box-shadow-gray{
+    box-shadow: 15px 15px 25px 5px rgba(0, 0, 0, 0.2)
+}

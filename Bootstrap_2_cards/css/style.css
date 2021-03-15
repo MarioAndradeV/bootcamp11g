@@ -1,0 +1,35 @@
+body {
+  background-color: #F9F9F9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.border-top-cyan {
+  border-top: 5px solid #45d3d3;
+}
+
+.border-top-red {
+  border-top: 5px solid #ea5353;
+}
+
+.border-top-orange {
+  border-top: 5px solid #fcaf4a;
+}
+
+.border-top-navy {
+  border-top: 5px solid #549ef2;
+}
+
+p {
+  font-weight: 400;
+  color: gray;
+}
+
+.row .col-12 .card .card-boyd h3 {
+  font-weight: 600;
+}
+
+.box-shadow-gray {
+  -webkit-box-shadow: 15px 15px 25px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 15px 15px 25px 5px rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=style.css.map */
