@@ -1,0 +1,38 @@
+.border-{
+    &orange{
+        border: 3px solid orange;
+     }
+    &golden{
+        border: 3px solid goldenrod;
+    }
+    &blue{
+        border: 3px solid blue;
+    }
+    &green{
+        border: 3px solid green;
+    }
+    &purple{
+        border: 3px solid purple;
+    }
+    &magenta{
+        border: 3px solid magenta;
+    }
+    &red{
+        border: 3px solid red;
+    }
+    &yellow{
+        border: 3px solid yellow;
+    }
+    &navy{
+        border: 3px solid navy;
+    }
+}
+
+
+
+
+
+
+.justify-content-evenly{
+    justify-content: space-evenly;
+}
