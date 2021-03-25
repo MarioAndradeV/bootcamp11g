@@ -14,7 +14,7 @@ var palabraImp;
 console.log( ` Existen ${numaTotal} a `) 
 
 for( var i = 0; i< num; i+=2 ){
-    palabraPar += phrase.charAt(i);  
+    palabraPar = phrase.charAt(i);  
      
    
 }
