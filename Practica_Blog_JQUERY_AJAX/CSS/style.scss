@@ -1,0 +1,13 @@
+.gallery-wrapper{
+    height:50vh;
+}
+
+
+.button:hover{
+    border: 1px solid powderblue;
+    background-color: rgb(52, 171, 187);
+    transition: background-color .6s;
+    -webkit-box-shadow: 1px 1px 2px 1px #000000; 
+    box-shadow: 1px 1px 2px 1px #000000;
+    }
+    

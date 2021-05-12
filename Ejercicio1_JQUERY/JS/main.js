@@ -45,15 +45,22 @@ $('#text2').html(`1/${image.length}`)
 $("#siguiente").click(()=>{
     if (contImg >= image.length-1){
          contImg = image.length-1
+         
      }
     else{
         contImg += 1
+        
+        
     }
+    // contImg===image.length-1
+    //     ? $("#siguiente").attr("disabled",true)
+    //     : $("#siguiente").attr("disabled",false)
     let img1= $("#imagenAlt").attr("src",image[contImg])
     console.log(contImg)
     console.log(image.length-1)
     $('#text2').html(`${contImg+1}/${image.length}`)
 })
+
 $("#atras").click(()=>{
     if (contImg <= 0){
         contImg = 0
@@ -61,6 +68,9 @@ $("#atras").click(()=>{
     else{
         contImg -- 
     }
+    // contImg===0
+    //     ? $("#atras").attr("disabled",true)
+    //     : $("#atras").attr("disabled",false)
     let img1= $("#imagenAlt").attr("src",image[contImg])
     console.log(contImg)
     console.log(image.length-1)
