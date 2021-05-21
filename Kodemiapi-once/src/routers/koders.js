@@ -47,18 +47,14 @@ router.post('/', async (request, response) =>{
     }
 })
 
-router.delete('/:id', async (request, response) => {
-	
+router.delete('/:id', async (request, response) => {	
 	try{
 		const idKoder = request.params.id
 		await koders.deleteKoder(idKoder)
-		
-
 		response.json({
 			success : true,
 			message : "Koder deleted :D "
 		})
-
 	}
 	catch(error){
 		response.status(400)
