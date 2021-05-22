@@ -1,41 +1,36 @@
 
 const express = require('express')
-const koders = require('../usecases/koders')
+const mentors = require('../usecases/mentors')
 
 const router = express.Router()
 
 router.get('/', async (request, response) =>{
     try{
-        const allKoders = await koders.getAll()
-
+        const allMentors = await mentors.getAll()
         response.json({
             success: true,
-            message: 'All koders',
+            message: 'All Mentors',
             data: {
-                koders: allKoders
-
+                mentors: allMentors
             }
         })
     } catch (error){
         response.status(400)
         response.json({
             success: false,
-            message: 'Error at get all koders',
+            message: 'Error at get all Mentors',
             error: error.message
         })
     }
-
 })
 
 router.post('/', async (request, response) =>{
     try{
-        const koder = request.body
-        await koders.postKoder(koder)
-        // Linea de charles
-        // const koderCreated = koders.create(request.body)
+        const mentor = request.body
+        await mentors.postMentor(mentor)
         response.json({
             success: true,
-            message: 'Koder created :D'
+            message: 'Mentor created :D'
         })
     } catch (error){
         response.status(400)
@@ -49,11 +44,11 @@ router.post('/', async (request, response) =>{
 
 router.delete('/:id', async (request, response) => {	
 	try{
-		const idKoder = request.params.id
-		await koders.deleteKoder(idKoder)
+		const idMentor = request.params.id
+		await mentors.deleteMentor(idMentor)
 		response.json({
 			success : true,
-			message : "Koder deleted :D "
+			message : "Mentor deleted :D "
 		})
 	}
 	catch(error){
@@ -68,12 +63,12 @@ router.delete('/:id', async (request, response) => {
 router.patch('/:id', async (request, response) => {	
 	try{
 		const { id } = request.params
-        const koderUpdated = await koders.updateById(id, request.body)
+        const mentorUpdated = await mentors.updateById(id, request.body)
 		response.json({
 			success : true,
-			message : "Koder updated :D ",
+			message : "Mentor updated :D ",
             data: {
-                koder: koderUpdated
+                mentor: mentorUpdated
             }
 		})
 	}
