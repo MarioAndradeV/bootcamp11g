@@ -1,6 +1,4 @@
 
-//endpoint -> caso de uso  -> modelo
-
 const Mentors = require('../models/mentors')
 
 function getAll() {
